@@ -18,7 +18,3 @@ in order to update the Sheet and have it ready for updates from Zapier.
 Long story short, now I have a way to keep an updated list of patrons
 and at what level in an each to access place. I am doing this in order
 to update the credits on Metasploit Minute more regularly
-
-# TODO
-
-Switch email address column to Handle/Name
