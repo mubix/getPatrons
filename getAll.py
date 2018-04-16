@@ -25,8 +25,8 @@ while True:
 
 
 names_and_pledges = [{
-    'email': pledge.relationship('patron').attribute('email'),
-    'id': pledge.id(),
+    'full_name': pledge.relationship('patron').attribute('full_name'),
+    'id': pledge.relationship('patron').id(),
     'url': pledge.relationship('patron').attribute('url'),
     'amount_cents': pledge.attribute('amount_cents'),
 } for pledge in pledges]
@@ -36,4 +36,4 @@ print names_and_pledges
 for p in names_and_pledges:
   dollar = str(p['amount_cents'] / 100)
   delim = "\t"
-  print p['id'] + delim + p['email'] + delim + dollar + delim + p['url']
+  print p['id'] + delim + p['full_name'] + delim + dollar + delim + p['url']
